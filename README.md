@@ -2,9 +2,9 @@
 * All you have to do is make Service, Repository, Controller, Entity
 * Spring Data JPA handles the rest
 
-## Heading 2
+## Warning
 this file has no Database password in application.properties.
-you offer your own Databaseurl, id, password 
+you offer your own Databaseurl, id, password and you are all set
 
 ___
 ___

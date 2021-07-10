@@ -8,7 +8,7 @@ ___
 # Important
 ## You should specify com.example.demo.employee.repository name(package where repository belongs to) and make package(folder) 
 ## and move only repository(jpa) class file to the package, not any other file ,or you will get errors
-'''java
+```{.java}
 @Configuration
 @PropertySource({"application.properties"})
 @EnableJpaRepositories(
@@ -21,7 +21,7 @@ ___
 ## You should specify com.example.demo.employee.entity name(package where entity class belongs to) and make package(folder)
 ## and move only entity class file to the package, not any other file, or you will get errors
 
-'''java
+```{.java}
 public class PersistenceEmployeeConfiguration {
     @Autowired
     private Environment env;

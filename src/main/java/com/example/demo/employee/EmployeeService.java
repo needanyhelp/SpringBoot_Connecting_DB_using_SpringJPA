@@ -1,4 +1,6 @@
-package com.example.demo;
+package com.example.demo.employee;
+
+import com.example.demo.employee.entity.Employee;
 
 import java.util.List;
 

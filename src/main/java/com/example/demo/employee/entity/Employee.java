@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.employee.entity;
 
 import lombok.*;
 
@@ -6,7 +6,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 @Entity
-@Table(name="employee")
+@Table(schema ="employee_directory", name="employee")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -29,6 +29,8 @@ public class Employee {
     @NotBlank(message="is required")
     @Column(name="email")
     private String email;
+
+
 
 
 }

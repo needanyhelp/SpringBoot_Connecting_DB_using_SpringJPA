@@ -1,11 +1,8 @@
-package com.example.demo;
-
-import java.util.List;
+package com.example.demo.employee;
 
 import javax.validation.Valid;
 
-import com.example.demo.Employee;
-import com.example.demo.EmployeeService;
+import com.example.demo.employee.entity.Employee;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -14,6 +11,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
 
 
 @Controller
@@ -28,17 +27,20 @@ public class MyController {
 
     // add mapping for "/list"
 
+
+
     @GetMapping("/list")
     public String listEmployees(Model theModel) {
 
         // get employees from db
-        List<Employee> theEmployees = employeeService.findAll();
+        List<Employee> theEmployee = employeeService.findAll();
 
         // add to the spring model
-        theModel.addAttribute("employees", theEmployees);
+        theModel.addAttribute("employees", theEmployee);
 
         return "employees/list-employees";
     }
+
 
     @GetMapping("/showFormForAdd")
     public String showFormForAdd(Model theModel) {

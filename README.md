@@ -15,7 +15,7 @@ ___
         basePackages = "com.example.demo.employee.repository",
         entityManagerFactoryRef = "employeeEntityManager",
         transactionManagerRef = "employeeTransactionManager"
-'''     
+```    
 
 # Important
 ## You should specify com.example.demo.employee.entity name(package where entity class belongs to) and make package(folder)
@@ -34,4 +34,4 @@ public class PersistenceEmployeeConfiguration {
         em.setDataSource(employeeDataSource());
         em.setPackagesToScan(
                 new String[] {"com.example.demo.employee.entity"});
-'''
+```
